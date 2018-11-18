@@ -1,4 +1,4 @@
-﻿# W17:[长距离LoRa传输](https://github.com/OS-Q/W17) 
+﻿# W17:[长距离LoRa通信](https://github.com/OS-Q/W17) 
 
 基于低成本自建LoRa网络通信
 
@@ -15,6 +15,10 @@
 ---
 
 ## 组成
+
+#### tiny
+
+基于微设备
 
 
 ---
