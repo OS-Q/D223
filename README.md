@@ -1,16 +1,24 @@
-﻿# D98：[LoRa通道](https://github.com/OS-Q/D98)
+﻿# D119：[LoRa管道](https://github.com/OS-Q/D119)
 
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
 
-#### 归属通道转换：[W14](https://github.com/OS-Q/W14)
+#### 归属广域通道：[W17](https://github.com/OS-Q/W17)
 
 #### 关于系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
 
-## [平台描述](https://github.com/OS-Q/D98/wiki) 
+## [设备描述](https://github.com/OS-Q/D119/wiki) 
 
-LoRa通道设备,用于通过LoRa通道收发通信数据
+LoRa通道设备，用于通过LoRa调制通信数据
 
 ### [共用资源](OS-Q/)
+
+#### [数据手册](docs/)
+
+芯片手册及参考设计
+
+#### [工程代码](project/)
+
+包括基于Keil MDK的工程示例代码
 
 ---
 
@@ -18,35 +26,35 @@ LoRa通道设备,用于通过LoRa通道收发通信数据
 
 - naming patterns：system Q[1,4] -> node M[1,12] -> platform W[1,52] -> device D[1,365]
 
-## [同级设备](https://github.com/OS-Q/W14/wiki) 
+## [同级设备](https://github.com/OS-Q/W17/wiki) 
 
-#### D92：[RS485](https://github.com/OS-Q/D92)
+#### D113：[NB通道](https://github.com/OS-Q/D113)
 
-将串口通信数据转换为RS485信号发送
+基于NB-IOT设备的通信连接管道
 
-#### D93：[USB](https://github.com/OS-Q/D93)
+#### D114：[eMTC通道](https://github.com/OS-Q/D114)
 
-将串口通信数据转换为USB数据发送
+基于eMTC设备的通信连接管道
 
-#### D94：[Ethernet](https://github.com/OS-Q/D94)
+#### D115：[2G通道](https://github.com/OS-Q/D115)
 
-通过串口或SPI接收转发数据通过以太网发送数据
+基于2G GSM设备的通信连接管道
 
-#### D95：[IR](https://github.com/OS-Q/D95)
+#### D116：[3G通道](https://github.com/OS-Q/D116)
 
-将通信数据转换为IR信号发送
 
-#### D96：[ISM-LF](https://github.com/OS-Q/D96)
 
-通过射频芯片将数据信号转换为433MHz频段无线电发送
+#### D117：[4G通道](https://github.com/OS-Q/D117)
 
-#### D97：[ISM-HF](https://github.com/OS-Q/D97)
 
-将通信数据转换为2.4GHz频段射频发送出去
 
-#### -> D98：[LoRa](https://github.com/OS-Q/D98)
+#### D118：[5G通道](https://github.com/OS-Q/D118)
 
-将通信数据转换为LoRa发送
+
+
+#### -> D119：[LoRa管道](https://github.com/OS-Q/D119)
+
+基于LoRa的管道无线设备
 
 ---
 
