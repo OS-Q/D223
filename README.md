@@ -1,63 +1,36 @@
-﻿# D119：[LoRa管道](https://github.com/OS-Q/D119)
-
+﻿# [LoRa module](https://github.com/OS-Q/D113)
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
-
-#### 归属广域通道：[W17](https://github.com/OS-Q/W17)
-
+####  qitas@qitas.cn
+#### 归属长距管道：[W17](https://github.com/OS-Q/W17)
 #### 关于系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
 
-## [设备描述](https://github.com/OS-Q/D119/wiki) 
+## [设备描述](https://github.com/OS-Q/D113/wiki) 
 
-LoRa通道设备，用于通过LoRa调制通信数据
+LoRa module设备，本身不可编程，通过通信口接收控制设备数据并通过无线收发数据，完成ISM频段的长距离无线数据收发
 
-### [共用资源](OS-Q/)
+### [设备资源](https://github.com/OS-Q/)
 
-#### [数据手册](docs/)
+- [资源](src/)
+- [文档](docs/)
+- [工程](project/)
 
-芯片手册及参考设计
+### [相关硬件](https://github.com/sochub)
 
-#### [工程代码](project/)
+- [SX1276](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276#download-resources) 
+- [LoRa classA](https://github.com/OS-Q/D113) 
+- [LoRa classC](https://github.com/OS-Q/D113) 
 
-包括基于Keil MDK的工程示例代码
+### [设备结构](https://github.com/OS-Q/113)
 
----
+* W17：[长距管道](https://github.com/OS-Q/W17)
+	* D113：[LoRa module](https://github.com/OS-Q/D113)
+	* D114：[NB module](https://github.com/OS-Q/D114)
+	* D115：[eMTC module](https://github.com/OS-Q/D115)
+	* D116：[2G moduleA](https://github.com/OS-Q/D116)
+	* D117：[2G moduleS](https://github.com/OS-Q/D117)
+	* D118：[4G moduleA](https://github.com/OS-Q/D118)
+	* D119：[4G moduleS](https://github.com/OS-Q/D119)
 
-- 边缘设备命名规则：体系 Q:[1,4] -> 节点 M:[1,12] -> 平台 W:[1,52] -> 设备 D:[1,365]
+### [OS-Q : Operation System for edge devices](http://www.OS-Q.com/Edge/D113)
+####  2019-4-25 
 
-- naming patterns：system Q[1,4] -> node M[1,12] -> platform W[1,52] -> device D[1,365]
-
-## [同级设备](https://github.com/OS-Q/W17/wiki) 
-
-#### D113：[NB通道](https://github.com/OS-Q/D113)
-
-基于NB-IOT设备的通信连接管道
-
-#### D114：[eMTC通道](https://github.com/OS-Q/D114)
-
-基于eMTC设备的通信连接管道
-
-#### D115：[2G通道](https://github.com/OS-Q/D115)
-
-基于2G GSM设备的通信连接管道
-
-#### D116：[3G通道](https://github.com/OS-Q/D116)
-
-
-
-#### D117：[4G通道](https://github.com/OS-Q/D117)
-
-
-
-#### D118：[5G通道](https://github.com/OS-Q/D118)
-
-
-
-#### -> D119：[LoRa管道](https://github.com/OS-Q/D119)
-
-基于LoRa的管道无线设备
-
----
-
-####  © qitas@qitas.cn
-###  [OS-Q redefined Operation System](http://www.OS-Q.com)
-####  @ 2019-1-4
