@@ -60,13 +60,12 @@ OTAA(Over-The-Air Activation)，node端在做OTAA入网之前，需要先具备�
 
 OS-Q中设定的LoRa设备和工程有5个，其中3个归属于[通信管道](https://github.com/OS-Q/M4)，一个归属[通信终端](https://github.com/OS-Q/M5)，一个归属[通信网关](https://github.com/OS-Q/M6)。
 
-定义的LoRa设备：
+OS-Q中定义的其他LoRa设备：
 
 * [LoRa-COM](https://github.com/OS-Q/D101)
 * [LoRa-USB](https://github.com/OS-Q/D109)
-* [LoRa-Module](https://github.com/OS-Q/D113)
-* LoRa通信终端设备[LoRa-Dev](https://github.com/OS-Q/D137)
-* LoRa通信网关设备[LoRa-Router](https://github.com/OS-Q/D170)
+* 终端设备[LoRa-Device](https://github.com/OS-Q/D148)
+* 网关设备[LoRa-Router](https://github.com/OS-Q/D170)
 
 管道通信设备和终端通信设备的区别在于：管道设备驱动程序不需要基于系统开发，也不涉及固件的升级，更多是为了完成特定的数据收发和控制，所以对设备的处理能力和资源要求不高，最求较低的成本和适用性。
 
