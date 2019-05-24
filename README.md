@@ -41,9 +41,9 @@ OTAA(Over-The-Air Activation)，node端在做OTAA入网之前，需要先具备�
 
 ### [设备资源](https://github.com/OS-Q/)
 
-* [资源](src/)
 * [文档](docs/)
-* [工程](project/)
+* [资源](src/)
+	* [STM32L0 Keil工程](src/STM32L0)
 
 ### [组织关系](https://github.com/OS-Q/113)
 
