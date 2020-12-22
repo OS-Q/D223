@@ -1,7 +1,7 @@
 {
-    "name":"Gogs",
+    "name":"GitLab",
     "type":"server",
     "base":"*",
-    "url":"https://github.com/OS-Q/S04",
+    "url":"https://github.com/OS-Q/S08",
     "version":"1.0.0"
 }
