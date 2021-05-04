@@ -56,16 +56,16 @@ jobs:
         example:
           - "arduino-blink"
           - "cmsis-blink"
-          - "libopencm3-blink"
+          # - "libopencm3-blink"
           - "mbed-rtos-custom-target"
           - "mbed-rtos-events"
           - "mbed-rtos-filesystem"
           - "mbed-rtos-mesh-minimal"
           - "mbed-rtos-serial"
           - "mbed-blink"
-          - "mbed-custom-target"
           - "mbed-events"
           - "spl-blink"
+          - "stm32cube-hal-blink"
           - "stm32cube-hal-lcd"
           - "arduino-blink-different-cores"
 

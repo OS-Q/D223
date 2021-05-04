@@ -21,14 +21,13 @@ jobs:
           command: |
             pio run -d examples/arduino-blink
             pio run -d examples/cmsis-blink
-            pio run -d examples/libopencm3-blink
+            pio run -d examples/stm32cube-hal-blink
             pio run -d examples/mbed-rtos-custom-target
             pio run -d examples/mbed-rtos-events
             pio run -d examples/mbed-rtos-filesystem
             pio run -d examples/mbed-rtos-mesh-minimal
             pio run -d examples/mbed-rtos-serial
             pio run -d examples/mbed-blink
-            pio run -d examples/mbed-custom-target
             pio run -d examples/mbed-events
             pio run -d examples/spl-blink
             pio run -d examples/stm32cube-hal-lcd
