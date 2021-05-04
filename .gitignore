@@ -1,8 +1,19 @@
 *.pyc
-*.lst
-*.tmp
-*.DS_Store
-*desktop*
-*.o
-.pio/
-.vscode/
+*__pyc*/
+*.pio/
+*.vscode/
+misc/svd/*.html
+*.rst
+examples/**/*.yml
+examples/**/*.md
+**/CONTR*
+**/CHANGE*
+.gitmodules
+**/*/README*
+LICENSE*
+*.png
+*.jpg
+*.rst
+# *.md
+**/*/README*
+README
