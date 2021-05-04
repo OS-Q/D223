@@ -1,28 +1,3 @@
-# Copyright 2014-present PlatformIO <contact@platformio.org>
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#    http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-"""
-libOpenCM3
-
-The libOpenCM3 framework aims to create a free/libre/open-source
-firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers,
-including ST STM32, Ti Tiva and Stellaris, NXP LPC 11xx, 13xx, 15xx,
-17xx parts, Atmel SAM3, Energy Micro EFM32 and others.
-
-http://www.libopencm3.org
-"""
-
 from __future__ import absolute_import
 
 import re

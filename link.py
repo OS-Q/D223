@@ -1,17 +1,3 @@
-# Copyright 2014-present PlatformIO <contact@platformio.org>
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#    http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 import copy
 import json
 import os
@@ -32,17 +18,7 @@ class P29Platform(PlatformBase):
 
         frameworks = variables.get("pioframework", [])
         if "arduino" in frameworks:
-            if board.startswith("portenta"):
-                self.frameworks["arduino"]["package"] = "framework-arduino-mbed"
-                self.frameworks["arduino"][
-                    "script"
-                ] = "builder/frameworks/arduino/mbed-core/arduino-core-mbed.py"
-                self.packages["framework-arduinoststm32"]["optional"] = True
-            elif build_core == "maple":
-                self.frameworks["arduino"]["package"] = "framework-arduinoststm32-maple"
-                self.packages["framework-arduinoststm32-maple"]["optional"] = False
-                self.packages["framework-arduinoststm32"]["optional"] = True
-            elif build_core == "stm32l0":
+            if build_core == "stm32l0":
                 self.frameworks["arduino"]["package"] = "framework-arduinoststm32l0"
                 self.packages["framework-arduinoststm32l0"]["optional"] = False
                 self.packages["framework-arduinoststm32"]["optional"] = True
@@ -77,13 +53,6 @@ class P29Platform(PlatformBase):
         default_protocol = board_config.get("upload.protocol") or ""
         if variables.get("upload_protocol", default_protocol) == "dfu":
             self.packages["tool-dfuutil"]["optional"] = False
-
-        if board == "mxchip_az3166":
-            self.frameworks["arduino"][
-                "package"] = "framework-arduinostm32mxchip"
-            self.frameworks["arduino"][
-                "script"] = "builder/frameworks/arduino/mxchip.py"
-            self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.60301.0"
 
         if "zephyr" in variables.get("pioframework", []):
             for p in self.packages:

@@ -1,17 +1,17 @@
-name: PIO
+name: QIO
 
 on:
   push:
     branches:
-      - pio
+      - qio
     paths:
       - 'boards/**'
-      - 'builder/**'
+      - 'extend/**'
       - 'misc/**'
       - 'examples/**'
       - 'ldscripts/**'
-      - 'platform.json'
-      - 'platform.py'
+      - 'link.json'
+      - 'link.py'
 
 jobs:
   CodeCheck:
@@ -55,19 +55,19 @@ jobs:
       matrix:
         example:
           - "arduino-blink"
+          - "arduino-blink-different-cores"
           - "cmsis-blink"
           # - "libopencm3-blink"
+          - "mbed-blink"
+          - "mbed-events"
           - "mbed-rtos-custom-target"
           - "mbed-rtos-events"
           - "mbed-rtos-filesystem"
           - "mbed-rtos-mesh-minimal"
           - "mbed-rtos-serial"
-          - "mbed-blink"
-          - "mbed-events"
           - "spl-blink"
           - "stm32cube-hal-blink"
           - "stm32cube-hal-lcd"
-          - "arduino-blink-different-cores"
 
         os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
@@ -85,7 +85,7 @@ jobs:
       - name: Install
         run: |
           python -m pip install --upgrade pip
-          pip install -U https://github.com/platformio/platformio/archive/develop.zip
+          pip install -U https://github.com/OS-Q/M03/releases/latest/download/qio.zip
           pio platform install file://.
 
       - name: Build examples

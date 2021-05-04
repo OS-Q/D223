@@ -8,8 +8,8 @@ steps:
   - apt update
   - apt install -y git
   - git submodule update --init --recursive
-  - pip install -U https://github.com/platformio/platformio/archive/develop.zip
-  - pio platform install https://github.com/OS-Q/P29/archive/pio.zip
+  - pip install -U https://github.com/OS-Q/M03/releases/latest/download/qio.zip
+  - pio platform install https://github.com/OS-Q/P29/archive/qio.zip
   - pio run -d examples/arduino-blink
   - pio run -d examples/cmsis-blink
   - pio run -d examples/mbed-rtos-custom-target
