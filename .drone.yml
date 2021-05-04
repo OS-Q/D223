@@ -2,7 +2,7 @@ kind: pipeline
 name: OSQ
 
 steps:
-- name: PIO
+- name: QIO
   image: python:3
   commands:
   - apt update
