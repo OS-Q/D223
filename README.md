@@ -9,7 +9,9 @@
 ### [简介](https://github.com/OS-Q/P29/wiki)
 
 
-[P29](https://github.com/OS-Q/P29)
+[P29](https://github.com/OS-Q/P29) 使用低功耗MCU平台构建。
+
+当前适配 [STM32L](https://www.st.com/zh/microcontrollers-microprocessors/stm32-ultra-low-power-mcus.html)
 
 
 ### [源圈 OS-Q (Open Source & QA) ](http://www.OS-Q.com)
