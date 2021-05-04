@@ -15,7 +15,38 @@ jobs:
             python -m pip install --upgrade pip
             sudo apt-get install libc6-i386
             pip install -U https://github.com/OS-Q/M03/releases/latest/download/qio.zip
-            pio platform install https://github.com/OS-Q/P29/archive/qio.zip
+            pio platform install file://.
+      - run:
+          name: "Build"
+          command: |
+            pio run -d examples/arduino-blink
+            pio run -d examples/cmsis-blink
+            pio run -d examples/stm32cube-hal-blink
+            pio run -d examples/mbed-rtos-custom-target
+            pio run -d examples/mbed-rtos-events
+            pio run -d examples/mbed-rtos-filesystem
+            pio run -d examples/mbed-rtos-mesh-minimal
+            pio run -d examples/mbed-rtos-serial
+            pio run -d examples/mbed-blink
+            pio run -d examples/mbed-events
+            pio run -d examples/spl-blink
+            pio run -d examples/stm32cube-hal-lcd
+            pio run -d examples/arduino-blink-different-cores
+
+  PIO:
+    docker:
+      - image: python:3
+    steps:
+      - checkout
+      - run:
+          name: "Install"
+          command: |
+            apt update
+            apt install -y git
+            git submodule update --init --recursive
+            python -m pip install --upgrade pip
+            pip install -U https://github.com/platformio/platformio/archive/develop.zip
+            pio platform install file://.
       - run:
           name: "Build"
           command: |
@@ -38,3 +69,4 @@ workflows:
     run_ci:
         jobs:
           - QIO
+          - PIO
